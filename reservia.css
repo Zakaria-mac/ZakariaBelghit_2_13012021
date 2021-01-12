@@ -870,6 +870,7 @@ aside
     font-size: 1.6em;
     font-weight: bold;
     font-family: 'raleway', sans-serif;
+    margin-left: 10px;
 }
 #activities_tabs
 {
@@ -878,6 +879,7 @@ aside
     justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: 40px;
+    margin-left: 10px;
 }
 #activities1
 {
