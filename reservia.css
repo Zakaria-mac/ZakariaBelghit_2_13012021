@@ -34,9 +34,9 @@ body
 {
     display: flex;
     justify-content: flex-end;
-    width: 400px;
     margin-top: 35px;
     margin-right: 0%;
+    margin-left: 800px;
 }
 #logo nav ul
 {
@@ -60,6 +60,14 @@ body
 #logo nav .hebergements, .activites 
 {
     color: black;
+}
+.inscription
+{
+    margin-top: 35px;
+    padding-top: 12px;
+    margin-right: 0;
+    margin-left: 0;
+    font-size: 1.2em;
 }
 #title h1
 {
@@ -276,7 +284,7 @@ aside
     padding: 15px 0 8px 18px;
     width: 420px;
 }
-#accommodation_title h1
+#accommodation_title h2
 {
     font-size: 1.6em;
     font-weight: bold;
@@ -321,7 +329,7 @@ aside
 {
     width: 100%;
 }
-#acco_tabs1 a h1
+#acco_tabs1 a h2
 {
     font-size: 1.2em;
     font-weight: bold;
@@ -374,7 +382,7 @@ aside
 {
     width: 100%; 
 }
-#acco_tabs2 a h1
+#acco_tabs2 a h2
 {
     font-size: 1.2em;
     font-weight: bold;
@@ -426,7 +434,7 @@ aside
 {
     width: 100%;
 }
-#acco_tabs3 a h1
+#acco_tabs3 a h2
 {
     font-size: 1.2em;
     font-weight: bold;
@@ -478,7 +486,7 @@ aside
 {
     width: 100%;
 }
-#acco_tabs4 a h1
+#acco_tabs4 a h2
 {
     font-size: 1.2em;
     font-weight: bold;
@@ -531,7 +539,7 @@ aside
 {
     width: 100%;
 }
-#acco_tabs5 a h1
+#acco_tabs5 a h2
 {
     font-size: 1.2em;
     font-weight: bold;
@@ -583,7 +591,7 @@ aside
 {
     width: 100%;
 }
-#acco_tabs6 a h1
+#acco_tabs6 a h2
 {
     font-size: 1.2em;
     font-weight: bold;
@@ -627,7 +635,7 @@ aside
     justify-content: space-between;
     align-items: center;
 }
-#title_choices h1
+#title_choices h2
 {
     font-size: 1.6em;
     font-weight: bold;
@@ -690,7 +698,7 @@ aside
 {
     height: 100%;
 }
-#popular1 a h1
+#popular1 a h2
 {
     display: inline-block;
     vertical-align: top;
@@ -760,7 +768,7 @@ aside
 {
     height: 100%;
 }
-#popular2 a h1
+#popular2 a h2
 {
     display: inline-block;
     vertical-align: top;
@@ -830,7 +838,7 @@ aside
 {
     width: 100%;
 }
-#popular3 a h1
+#popular3 a h2
 {
     display: inline-block;
     vertical-align: top;
@@ -865,7 +873,7 @@ aside
     flex-direction: column;
     justify-content: flex-start;
 }
-#activities_title h1
+#activities_title h2
 {
     font-size: 1.6em;
     font-weight: bold;
@@ -910,7 +918,7 @@ aside
 {
     height: 100%;
 }
-#activities1 a h1
+#activities1 a h2
 {
     color: black;
     font-size: 1.2em;
@@ -950,7 +958,7 @@ aside
 {
     width: 100%;
 }
-#activities2 a h1
+#activities2 a h2
 {
     color: black;
     font-size: 1.2em;
@@ -992,7 +1000,7 @@ aside
 {
     width: 100%;  
 }
-#activities3 a h1
+#activities3 a h2
 {
     color: black;
     font-size: 1.2em;
@@ -1032,7 +1040,7 @@ aside
 {
     height: 100%; 
 }
-#activities4 a h1
+#activities4 a h2
 {
     color: black;
     font-size: 1.2em;
@@ -1074,7 +1082,7 @@ aside
 {
     width: 100%;
 }
-#activities5 a h1
+#activities5 a h2
 {
     color: black;
     font-size: 1.2em;
@@ -1116,7 +1124,7 @@ aside
 {
     width: 100%;
 }
-#activities6 a h1
+#activities6 a h2
 {
     color: black;
     font-size: 1.2em;
@@ -1253,46 +1261,50 @@ aside
     }
     #logo
     {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: flex-start;
         align-items:flex-start;
-        max-width: 100%;
-        margin: 0;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 0 0 -2%;
         padding: 0;
+        border-bottom: 1px solid grey;
     }
     #logo img
     {
+        order: 1;
         margin-top: auto;
+        margin-left: 2%;
         height: 60px;
     }
-    #logo nav 
+    #logo nav
     {
-        margin-top: 8%; 
-        margin-left: 10%;
-    }
-    #logo ul 
-    {
-        margin-top: auto; 
-        padding-left: 15%;
-        max-width: 100%;
-        border-bottom: 2px solid #F2F2F2; 
+        display: flex;
+        justify-content: flex-end;
+        order: 3;
+        margin-top: 35px;
+        margin-right: 3%;
+        margin-left: 0%;
+        width: 100%;
     }
     #logo nav li 
     {
-        font-size: 1.5em; 
+        font-size: 1.5em;
         padding: 0;
+      
     }
-    #logo nav .inscription
+    #logo .inscription
     {
-        position: relative;
-        bottom: 320%;
-        right:115%;
+        order: 2;
+        font-size: 1.5em;
         padding: 0;
-        margin: 0;
+        margin-top: 7%;
+        margin-left: 35%;
     }
     #logo nav li a:hover
     {
         text-decoration-line: underline;
+        
     }
     #title h1
     {
@@ -1402,7 +1414,7 @@ aside
         padding: 15px 0 40px 20px;
         border-radius: 0%;
     }
-    #accommodation_title h1
+    #accommodation_title h2
     {
         font-size: 1.8em;
         margin-left: 3%;
@@ -1488,7 +1500,7 @@ aside
         width: 97%;
         margin-left: 4%;     
     }
-    #title_choices h1
+    #title_choices h2
     {
         font-size: 1.8em;    
     }
@@ -1525,7 +1537,7 @@ aside
     {
         max-width: 100%;
     }
-    #activities_title h1
+    #activities_title h2
     {
         font-size: 1.8em;
         padding-top: 0%;
@@ -1656,7 +1668,8 @@ aside
         height: auto;
         max-width: 100%;
         padding: 15px 0 40px 20px;
-        margin: 30px 0 0 0;
+        margin-top: 10%;
+        max-width: 100%;
     }
     #apropos
     {
@@ -1787,7 +1800,7 @@ aside
         margin-right: 5%;
         margin-bottom: 0%;
     }
-    #accommodation_title h1
+    #accommodation_title h2
     {
         font-size: 1.5em; 
         padding-left: 2%;
@@ -1854,7 +1867,7 @@ aside
         margin-left: 0%;
         padding-left: 0%;
     }
-    #title_choices h1
+    #title_choices h2
     {
         font-size: 1.5em;    
     }
@@ -1906,7 +1919,7 @@ aside
         padding-left: 8%;
         padding-bottom: 4%;
     }
-    #activities_title h1
+    #activities_title h2
     {
         font-size: 1.5em; 
         margin-bottom: auto;   
