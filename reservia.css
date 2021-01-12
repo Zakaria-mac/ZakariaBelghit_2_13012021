@@ -1291,7 +1291,6 @@ aside
     {
         font-size: 1.5em;
         padding: 0;
-      
     }
     #logo .inscription
     {
@@ -1705,17 +1704,37 @@ aside
     #logo
     {
         flex-direction: row;
-        width: auto;
+        justify-content: space-between;
+        max-width: 100%;
     }
     #logo img
     {
         height: 48px;
         margin-top: 35px;
         margin-bottom: 2%;
+        order:1;
+    }
+    #logo nav
+    {
+        display: flex;
+        justify-content: flex-end;
+        order: 2;
+        margin-top: 35px;
+        margin-right: 0%;
+        margin-left: 0%;
+        width: 100%;
     }
     #logo nav li
     {
         font-size: 1.1em; 
+    }
+    #logo .inscription
+    {
+        font-size: 1.1em;
+        margin-top: 35px;
+        padding: 13x 20px 0 0;
+        margin-right: 50px;
+        order:3;
     }
     #title h1
     {
