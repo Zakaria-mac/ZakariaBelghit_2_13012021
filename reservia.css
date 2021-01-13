@@ -1942,13 +1942,13 @@ aside
         align-self: center;
         padding-right: 0%;
         border-right: 0;
-        padding-left: 7%;
+        padding-left: 6%;
         margin-right: 5%;
         margin-bottom: 0%;
     } 
     #activities_title
     {
-        padding-left: 0;
+        padding-left: 1%;
         padding-bottom: 4%;
     }
     #activities_title h2
@@ -2075,7 +2075,7 @@ aside
     }
     #apropos
     {
-        margin: 2% 10% 0 3%;
+        margin: 2% 10% 0 4%;
         max-width: 95%;
     }
     #apropos h2
