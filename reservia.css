@@ -1146,7 +1146,7 @@ aside
     justify-content: flex-start;
     align-content: center;
     height: 217px;
-    margin: 120px 0 0 0;
+    margin: 120px -50px 0 -50px;
     border: 1px #F2F2F2 hidden;
     background-color: #F2F2F2;
     padding-left: 15px;
@@ -2071,7 +2071,7 @@ aside
         align-content: center;
         width: 100%;
         padding: 15px 0 15px 0;
-        margin: 1% 0 0 -3%;
+        margin: 0 0 0 -3%;
     }
     #apropos
     {
